@@ -1,8 +1,15 @@
 package app.warriorkt.core.abilities
 
+import app.warriorkt.core.actors.Actor
+
 abstract class Ability {
+  abstract val description: String
   abstract val type: AbilityType
-  val name: String = this.javaClass.simpleName
+  var actor: Actor? = null
+
+  abstract fun perform()
+
+  val name: String get() = this.javaClass.simpleName
 
   enum class AbilityType {
     ACTION, SENSE
