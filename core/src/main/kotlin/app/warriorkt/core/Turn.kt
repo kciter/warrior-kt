@@ -3,8 +3,8 @@ package app.warriorkt.core
 import app.warriorkt.core.abilities.Ability
 
 class Turn(abilities: List<Ability>) {
-  private var action: Ability? = null
-  private var senses: MutableList<Ability> = mutableListOf()
+  var action: Ability? = null
+  var senses: MutableList<Ability> = mutableListOf()
 
   init {
     abilities.forEach { ability ->
