@@ -1,4 +1,8 @@
 package app.warriorkt.core
 
-class Direction {
+enum class Direction {
+  FORWARD,
+  BACKWARD,
+  RIGHT,
+  LEFT
 }
