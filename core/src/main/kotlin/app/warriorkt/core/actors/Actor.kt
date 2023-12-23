@@ -7,11 +7,12 @@ import kotlin.math.max
 
 abstract class Actor {
   abstract val maxHealth: Int
-  abstract val power: Int
-  abstract val abilities: MutableMap<String, Ability>
+  abstract val attackPower: Int
   abstract val character: Char
+  open val shootPower: Int = 0
+  open val abilities: MutableMap<String, Ability> = mutableMapOf()
 
-  private var health: Int = this.maxHealth
+  var health: Int = this.maxHealth
 
   var currentTurn: Turn? = null
 
@@ -29,7 +30,6 @@ abstract class Actor {
   fun addAbilities(abilities: List<Ability>) {
     abilities.forEach { ability ->
       this.abilities[ability.name] = ability.let { ability ->
-        ability.actor = this
         ability
       }
     }
