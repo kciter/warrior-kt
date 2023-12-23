@@ -7,7 +7,7 @@ enum class Direction {
   WEST
 }
 
-enum class RelativeDirection {
+enum class Orientation {
   FORWARD,
   BACKWARD,
   RIGHT,
