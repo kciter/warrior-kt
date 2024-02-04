@@ -8,7 +8,7 @@ class Turn(abilities: List<Ability>) {
 
   init {
     abilities.forEach { ability ->
-      if (ability.type == Ability.AbilityType.ACTION) {
+      if (ability.type == Ability.Type.ACTION) {
         this.action = ability
       } else {
         this.senses.add(ability)

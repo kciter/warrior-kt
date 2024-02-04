@@ -1,19 +1,24 @@
 package app.warriorkt.core.actors
 
 import app.warriorkt.core.LogQueue
+import app.warriorkt.core.Orientation
+import app.warriorkt.core.Position
 import app.warriorkt.core.Turn
 import app.warriorkt.core.abilities.Ability
-import kotlin.math.max
+import kotlin.reflect.KClass
 
 abstract class Actor {
   abstract val maxHealth: Int
   abstract val attackPower: Int
   abstract val character: Char
+  abstract var position: Position
+
+  var orientation: Orientation = Orientation.FORWARD
+
   open val shootPower: Int = 0
   open val abilities: MutableMap<String, Ability> = mutableMapOf()
 
   var health: Int = this.maxHealth
-
   var currentTurn: Turn? = null
 
   fun takeDamage(amount: Int) {
@@ -25,6 +30,11 @@ abstract class Actor {
         // Die Log
       }
     }
+  }
+
+  fun <T: Ability> addAbility(abilityClass: KClass<T>) {
+    val ability = abilityClass.constructors.first().call(this)
+    this.abilities[ability.name] = ability
   }
 
   fun addAbilities(abilities: List<Ability>) {
