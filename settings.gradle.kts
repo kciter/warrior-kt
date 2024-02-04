@@ -1,6 +1,6 @@
 rootProject.name = "warrior-kt"
 
 include(
-    "core",
-    "cli"
+  "core",
+  "cli"
 )
