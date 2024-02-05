@@ -1,4 +1,5 @@
 val kotlinVersion: String by extra("1.9.22")
+val kotlinCoroutinesVersion: String by extra("1.7.3")
 
 plugins {
   kotlin("jvm") version "1.9.22"
