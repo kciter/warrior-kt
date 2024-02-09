@@ -1,4 +1,4 @@
-package app.warriorkt.core.abilities
+package app.warriorkt.core.ability
 
 import app.warriorkt.core.Orientation
 import app.warriorkt.core.actor.Actor

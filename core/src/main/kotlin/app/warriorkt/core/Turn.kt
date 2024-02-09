@@ -1,6 +1,6 @@
 package app.warriorkt.core
 
-import app.warriorkt.core.abilities.Ability
+import app.warriorkt.core.ability.Ability
 
 class Turn(abilities: List<Ability>) {
   var action: Ability? = null

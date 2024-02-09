@@ -4,7 +4,7 @@ import app.warriorkt.core.LogQueue
 import app.warriorkt.core.Orientation
 import app.warriorkt.core.Position
 import app.warriorkt.core.Turn
-import app.warriorkt.core.abilities.Ability
+import app.warriorkt.core.ability.Ability
 import kotlin.reflect.KClass
 
 abstract class Actor {

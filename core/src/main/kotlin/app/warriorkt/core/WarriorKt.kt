@@ -1,6 +1,6 @@
 package app.warriorkt.core
 
-import app.warriorkt.core.abilities.Walk
+import app.warriorkt.core.ability.Walk
 import app.warriorkt.core.actor.Sludge
 
 

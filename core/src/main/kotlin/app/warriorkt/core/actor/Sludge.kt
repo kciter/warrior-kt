@@ -1,7 +1,7 @@
 package app.warriorkt.core.actor
 
 import app.warriorkt.core.Position
-import app.warriorkt.core.abilities.Ability
+import app.warriorkt.core.ability.Ability
 
 class Sludge(
   override var position: Position

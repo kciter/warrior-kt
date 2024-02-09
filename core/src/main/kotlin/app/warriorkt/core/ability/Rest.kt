@@ -1,4 +1,4 @@
-package app.warriorkt.core.abilities
+package app.warriorkt.core.ability
 
 import app.warriorkt.core.actor.Actor
 import kotlin.math.roundToInt
