@@ -1,8 +1,6 @@
-package app.warriorkt.core.actors
+package app.warriorkt.core.actor
 
-import app.warriorkt.core.Orientation
 import app.warriorkt.core.Position
-import app.warriorkt.core.abilities.Ability
 
 class Warrior(
   override var position: Position

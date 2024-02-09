@@ -1,7 +1,7 @@
 package app.warriorkt.core
 
-import app.warriorkt.core.actors.Actor
-import app.warriorkt.core.actors.Warrior
+import app.warriorkt.core.actor.Actor
+import app.warriorkt.core.actor.Warrior
 
 class Floor {
   val width: Int

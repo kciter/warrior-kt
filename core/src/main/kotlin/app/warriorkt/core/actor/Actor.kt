@@ -1,4 +1,4 @@
-package app.warriorkt.core.actors
+package app.warriorkt.core.actor
 
 import app.warriorkt.core.LogQueue
 import app.warriorkt.core.Orientation

@@ -1,6 +1,6 @@
 package app.warriorkt.core.abilities
 
-import app.warriorkt.core.actors.Actor
+import app.warriorkt.core.actor.Actor
 import kotlin.math.roundToInt
 
 class Rest(

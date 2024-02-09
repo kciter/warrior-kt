@@ -1,7 +1,7 @@
 package app.warriorkt.core.abilities
 
 import app.warriorkt.core.Orientation
-import app.warriorkt.core.actors.Actor
+import app.warriorkt.core.actor.Actor
 
 class Attack(
   override val actor: Actor
