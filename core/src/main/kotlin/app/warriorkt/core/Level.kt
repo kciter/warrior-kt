@@ -24,3 +24,20 @@ class Level(
 //
 //  fun clearBonus() = ((timeBonus).toDouble() * 0.2f).roundToInt()
 }
+
+
+data class Test(
+  val a: Int
+) {
+  fun change(b: Int, callback: () -> Unit) {
+    /* ... */
+    callback()
+  }
+}
+
+fun main() {
+  val test = Test(1)
+  test.change(2) {
+    // Event logic
+  }
+}
